@@ -1,0 +1,32 @@
+class AMSN{
+
+static int amsn(int num){
+if(num==0)
+   return 0;
+return 1+ amsn(num/10);
+}
+static boolean amsn(int num,int len){
+
+if(num==0)
+   return true;
+
+int digit= num%10;
+
+return (int)Math.pow(digit,len)+asmn(num/10);
+}
+public static void main(String[] args){
+
+int num = 407,len;
+len = order(num);
+if(amsn(num,len))
+System.out.println(num+" is ams");
+else
+System.out.println(num +" is not ams");
+}
+
+
+
+
+
+
+}
